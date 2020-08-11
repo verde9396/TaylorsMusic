@@ -1,0 +1,17 @@
+﻿@model IEnumerable<TaylorsMuic.Data.Models.Her>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Taylor's Music</h1>
+    <div>@Model.Count() </div> 
+</div>
+<ul>
+    @foreach (var Her in Model)
+    {
+    <li> @Her.Album,@Her.Name  , @Her.Genre</li>
+       
+    }
+</ul>
+
